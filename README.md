@@ -106,6 +106,27 @@ and using node's `req` and `res` objects is supported.
 | CompoundJS |                                                    |                 |
 | Flatiron   |                                                    |                 |
 
+### Error Handling
+
+Error handling in node.js is wonderful!
+The current solution to catch uncaught exceptions (emitters and streams throwing errors everywhere) is to use [domains][domains] (unless you listen to every error).
+If a framework does not handle uncaught exceptions, then domains should probably use [domains][domains].
+
+| Framework  | Middleware/Plugin                                                | Uncaught Exceptions Handling |
+|-----------:|------------------------------------------------------------------|------------------------------|
+| Meteor     |                                                                  |                              |
+| Express    | `next(err)` / `app.use(function (err, req, res, next) {})`       | ×                            |
+| Sails      |                                                                  |                              |
+| Koa        | try/catch                                                        | × - Unnecessary with generators |
+| Derby      |                                                                  |                              |
+| Kraken     | `next(err)` / `app.use(function (err, req, res, next) {})`       |                              |
+| Hapi       |                                                                  | [domains][domains]           |
+| Connect    | `next(err)` / `app.use(function (err, req, res, next) {})`       | ×                            |
+| Restify    | `next(err)`                                                      |                              |
+| Geddy      |                                                                  |                              |
+| CompoundJS |                                                                  |                              |
+| Flatiron   |                                                                  |                              |
+
 ### Control Flow
 
 Most frameworks use only node's traditional callbacks for control.
@@ -274,3 +295,5 @@ THE SOFTWARE.
 [markcavage]: https://github.com/mcavage
 [fibers]: https://github.com/laverdet/node-Fibers
 [consolidate]: https://github.com/visionmedia/consolidate.js/
+[domains]: http://nodejs.org/api/domain.html
+
