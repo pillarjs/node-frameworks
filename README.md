@@ -37,7 +37,7 @@ Traditionally, frameworks are explicitly server-side. However, there are now fra
 | Hapi       | ✓           |             |
 | Connect    | ✓           |             |
 | Restify    | ✓           |             |
-| Geddy      | ✓           |             |
+| Geddy      | ✓           | ✓           |
 | CompoundJS | ✓           |             |
 | Flatiron   | ✓           |             |
 
@@ -100,7 +100,7 @@ A framework is considered `node-compatible` if each middleware uses node's `req`
 | Hapi       |                                                    | ×               |
 | Connect    | `app.use(function (req, res, next) {})`            | ✓               |
 | Restify    | `app.use(function (req, res, next) {})`            | ✓               |
-| Geddy      |                                                    |                 |
+| Geddy      | `this.before(function (req, res) {})`              | ✓               |
 | CompoundJS |                                                    |                 |
 | Flatiron   |                                                    |                 |
 
@@ -141,7 +141,7 @@ Which features a framework includes or does not include is unimportant - its phi
 | Hapi       |                     |                   |         |             |              |                   |
 | Connect    | ×                   | ×                 | ×       | ×           | ×            | ×                 |
 | Restify    | ✓                   |                   | ✓       |             | ✓            | ✓                 |
-| Geddy      | ✓                   |                   |         |             |              |                   |
+| Geddy      | ✓                   | ✓                | ✓       |  ✓          | ✓           |                   |
 | CompoundJS |                     |                   |         |             |              |                   |
 | Flatiron   |                     |                   |         |             |              |                   |
 
@@ -156,7 +156,7 @@ Which features a framework includes or does not include is unimportant - its phi
 | Hapi       |                     |                 |             |              |                      |
 | Connect    | ×                   | ×               | ×           | ×            | ×                    |
 | Restify    |                     |                 | ✓           |              | ✓                    |
-| Geddy      | ✓                   | ✓               |             |              |                      |
+| Geddy      | ✓                   | ✓               |             |              | ✓                   |
 | CompoundJS |                     |                 |             |              |                      |
 | Flatiron   |                     |                 |             |              |                      |
 
@@ -185,7 +185,7 @@ Which features a framework includes or does not include is unimportant - its phi
 | Hapi       |              |
 | Connect    |              |
 | Restify    |              |
-| Geddy      |              |
+| Geddy      | MongoDB, LevelDB, Riak, Postgres, SQLite, MySQL |
 | CompoundJS |              |
 | Flatiron   |              |
 
@@ -202,7 +202,7 @@ Which features a framework includes or does not include is unimportant - its phi
 | Hapi       |                   |
 | Connect    |                   |
 | Restify    |                   |
-| Geddy      |                   |
+| Geddy      | handlebars, EJS, Jade, Swig |
 | CompoundJS |                   |
 | Flatiron   |                   |
 
