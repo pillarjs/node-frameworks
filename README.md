@@ -194,7 +194,7 @@ Which features a framework includes or does not include is unimportant - its phi
 | Framework  | Templating System |
 |-----------:|-------------------|
 | Meteor     | [handlebars][handlebars] |
-| Express    |                   |
+| Express    |  EJS, Handlebars, Haml, Jade, Hogan, swig, and [many more][expresstemplate] |
 | Sails      |                   |
 | Koa        |                   |
 | Derby      | [handlebars][handlebars]-like |
@@ -241,6 +241,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 [express]: https://github.com/visionmedia/express
+[expresstemplate]: https://github.com/visionmedia/express/wiki#template-engines
 [koa]: https://github.com/koajs/koa
 [connect]: https://github.com/senchalabs/connect
 [meteor]: https://github.com/meteor/meteor
