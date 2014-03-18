@@ -87,10 +87,12 @@ Note: [sloc](https://www.npmjs.org/package/sloc) is used to calculate the SLOC. 
 Different frameworks use plugins and middleware differently.
 Some use objects, others use functions.
 Some work with node's `req` and `res` objects, whereas many others do not.
-A framework is considered `node-compatible` if each middleware uses node's `req` and `res` objects.
 
-| Framework  | Signature                                          | Node-Compatible |
-|-----------:|-----------------------------------------           |-----------------|
+A framework "supports node" if node's `req` and `res` objects are passed to plugins and middleware,
+and using node's `req` and `res` objects is supported.
+
+| Framework  | Signature                                          | Supports Node   |
+|-----------:|----------------------------------------------------|-----------------|
 | Meteor     |                                                    | ×               |
 | Express    | `app.use(function (req, res, next) {})`            | ✓               |
 | Sails      |                                                    |                 |
