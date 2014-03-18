@@ -1,4 +1,3 @@
-
 A comparison of server-side node frameworks.
 This may include frameworks with a browser-side component.
 
@@ -148,7 +147,7 @@ Which features a framework includes or does not include is unimportant - its phi
 
 | Framework  | Session Management  | CSRF Protection | Compression | File Uploads | Basic Authentication |
 |-----------:|---------------------|-----------------|-------------|--------------|----------------------|
-| Meteor     |                     |                 |             |              |                      |
+| Meteor     |                     |                 | x           |              | x                    |
 | Express    | ×                   | ×               | ×           | ✓            | ×                    |
 | Sails      |                     |                 |             |              |                      |
 | Koa        | ×                   | ×               | ×           | ×            | ×                    |
@@ -194,7 +193,7 @@ Which features a framework includes or does not include is unimportant - its phi
 
 | Framework  | Templating System |
 |-----------:|-------------------|
-| Meteor     |                   |
+| Meteor     | [handlebars][handlebars] |
 | Express    |                   |
 | Sails      |                   |
 | Koa        |                   |
