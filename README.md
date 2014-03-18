@@ -112,7 +112,7 @@ Any framework without a `control flow` is assumed to use callbacks unless otherw
 
 | Framework  | Control Flow |
 |-----------:|--------------|
-| Meteor     |              |
+| Meteor     | [fibers][fibers] |
 | Express    |              |
 | Sails      |              |
 | Koa        | generators - [co][co] |
@@ -268,3 +268,4 @@ THE SOFTWARE.
 [dustjs]: https://github.com/akdubya/dustjs
 [restify]: https://github.com/mcavage/node-restify
 [markcavage]: https://github.com/mcavage
+[fibers]: https://github.com/laverdet/node-Fibers
