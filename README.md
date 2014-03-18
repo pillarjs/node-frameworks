@@ -174,37 +174,39 @@ Which features a framework includes or does not include is unimportant - its phi
 
 ### Database
 
-| Framework  | Database     |
-|-----------:|--------------|
-| Meteor     | [MongoDB][mongodb] |
-| Express    |              |
-| Sails      |              |
-| Koa        |              |
-| Derby      |              |
-| Kraken     |              |
-| Hapi       |              |
-| Connect    |              |
-| Restify    |              |
-| Geddy      | MongoDB, LevelDB, Riak, Postgres, SQLite, MySQL |
-| CompoundJS |              |
-| Flatiron   |              |
+| Framework  | Required Databases     | Recommended Databases | Compatible Databases |
+|-----------:|------------------------|-----------------------|----------------------|
+| Meteor     | [MongoDB][mongodb]     |                       |                      |
+| Express    |                        |                       |                      |
+| Sails      |                        |                       |                      |
+| Koa        |                        |                       |                      |
+| Derby      |                        |                       |                      |
+| Kraken     |                        |                       |                      |
+| Hapi       |                        |                       |                      |
+| Connect    |                        |                       |                      |
+| Restify    |                        |                       |                      |
+| Geddy      |                        |                       | MongoDB, LevelDB, Riak, Postgres, SQLite, MySQL |
+| CompoundJS |                        |                       |                      |
+| Flatiron   |                        |                       |                      |
 
 ### Templating
 
-| Framework  | Templating System |
-|-----------:|-------------------|
-| Meteor     | [handlebars][handlebars] |
-| Express    |                   |
-| Sails      |                   |
-| Koa        |                   |
-| Derby      | [handlebars][handlebars]-like |
-| Kraken     | [dustjs][dustjs] (not required) |
-| Hapi       |                   |
-| Connect    |                   |
-| Restify    |                   |
-| Geddy      | handlebars, EJS, Jade, Swig |
-| CompoundJS |                   |
-| Flatiron   |                   |
+| Framework  | Required Templating Systems | Recommended Templating Systems | Compatible Templating Systems |
+|-----------:|-----------------------------|--------------------------------|-------------------------------|
+| Meteor     | [handlebars][handlebars]    |                                |                               |
+| Express    |                             |                                | [consolidate][consolidate]    |
+| Sails      |                             |                                |                               |
+| Koa        |                             |                                |                               |
+| Derby      |                             | [handlebars][handlebars]-like  |                               |
+| Kraken     |                             | [dustjs][dustjs]               | [consolidate][consolidate]    |
+| Hapi       |                             |                                |                               |
+| Connect    |                             |                                |                               |
+| Restify    |                             |                                |                               |
+| Geddy      |                             |                                | handlebars, EJS, Jade, Swig, mustache |
+| CompoundJS |                             |                                |                               |
+| Flatiron   |                             |                                |                               |
+
+[consolidate][consolidate] means that the framework supports any templating system supported by consolidate.js.
 
 ## Contributing
 
@@ -269,3 +271,4 @@ THE SOFTWARE.
 [restify]: https://github.com/mcavage/node-restify
 [markcavage]: https://github.com/mcavage
 [fibers]: https://github.com/laverdet/node-Fibers
+[consolidate]: https://github.com/visionmedia/consolidate.js/
