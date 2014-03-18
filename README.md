@@ -97,7 +97,7 @@ A framework is considered `node-compatible` if each middleware uses node's `req`
 | Koa        | `app.use(function* (next) {})`                     | ×               |
 | Derby      |                                                    |                 |
 | Kraken     | `app.use(function (req, res, next) {})`            | ✓               |
-| Hapi       |                                                    | ×               |
+| Hapi       | `app.ext('onRequest', function (req, next) {})`    | ×               |
 | Connect    | `app.use(function (req, res, next) {})`            | ✓               |
 | Restify    | `app.use(function (req, res, next) {})`            | ✓               |
 | Geddy      | `this.before(function (req, res) {})`              | ✓               |
