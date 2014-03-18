@@ -133,30 +133,30 @@ Which features a framework includes or does not include is unimportant - its phi
 | Framework  | Content Negotiation | Cookie Management | Routing | View System | Body Parsing | Multipart Parsing |
 |-----------:|---------------------|-------------------|---------|-------------|--------------|-------------------|
 | Meteor     |                     |                   |         |             |              |                   |
-| Express    | ✓                   | ✓                 | ✓       | ✓           | ×            | ×                 |
+| Express    | ✓                   | ✓                 | ✓       | ✓           |              |                   |
 | Sails      |                     |                   |         |             |              |                   |
-| Koa        | ✓                   | ✓                 | ×       | ×           | ×            | ×                 |
+| Koa        | ✓                   | ✓                 |         |             |              |                   |
 | Derby      |                     |                   |         |             |              |                   |
 | Kraken     | ✓                   | ✓                 | ✓       | ✓           |              |                   |
 | Hapi       |                     |                   |         |             |              |                   |
-| Connect    | ×                   | ×                 | ×       | ×           | ×            | ×                 |
+| Connect    |                     |                   |         |             |              |                   |
 | Restify    | ✓                   |                   | ✓       |             | ✓            | ✓                 |
-| Geddy      | ✓                   | ✓                | ✓       |  ✓          | ✓           |                   |
+| Geddy      | ✓                   | ✓                 | ✓       |  ✓          | ✓            |                   |
 | CompoundJS |                     |                   |         |             |              |                   |
 | Flatiron   |                     |                   |         |             |              |                   |
 
 | Framework  | Session Management  | CSRF Protection | Compression | File Uploads | Basic Authentication |
 |-----------:|---------------------|-----------------|-------------|--------------|----------------------|
-| Meteor     |                     |                 | x           |              | x                    |
-| Express    | ×                   | ×               | ×           | ✓            | ×                    |
+| Meteor     |                     |                 | ✓           |              | ✓                    |
+| Express    |                     |                 |             | ✓            |                      |
 | Sails      |                     |                 |             |              |                      |
-| Koa        | ×                   | ×               | ×           | ×            | ×                    |
+| Koa        |                     |                 |             |              |                      |
 | Derby      |                     |                 |             |              |                      |
 | Kraken     |                     |                 |             |              |                      |
 | Hapi       |                     |                 |             |              |                      |
-| Connect    | ×                   | ×               | ×           | ×            | ×                    |
+| Connect    |                     |                 |             |              |                      |
 | Restify    |                     |                 | ✓           |              | ✓                    |
-| Geddy      | ✓                   | ✓               |             |              | ✓                   |
+| Geddy      | ✓                   | ✓               |             |              | ✓                    |
 | CompoundJS |                     |                 |             |              |                      |
 | Flatiron   |                     |                 |             |              |                      |
 
