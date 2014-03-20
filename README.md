@@ -11,7 +11,7 @@ The frameworks are listed by number of watchers, descending, as of March 18, 201
 ------------------------:|----------------------------------------------------------|-------------|-------------|
 | [Meteor][meteor]       | [Meteor Development Group][meteorgroup]                  | 973         | 11,687      |
 | [Express][express]     | [TJ Holowaychuk][tj]                                     | 828         | 12,824      |
-| [Sails][sails]         | [Mike McNeil][mikemcneil]                                | 481         | 5,546       |
+| [Sails][sails]         | [Mike McNeil][mikemcneil]                                | 485         | 5,582       |
 | [Koa][koa]             | [TJ Holowaychuk][tj]                                     | 232         | 3,160       |
 | [Derby][derby]         | [Nate Smith][natesmith] [Brian Noguchi][briannoguchi]    | 213         | 3,079       |
 | [Kraken][kraken]       | [PayPal][paypal]                                         | 210         | 2,424       |
@@ -30,7 +30,7 @@ Traditionally, frameworks are explicitly server-side. However, there are now fra
 |-----------:|-------------|-------------|
 | Meteor     | ✓           | ✓           |
 | Express    | ✓           |             |
-| Sails      | ✓           | ✓           |
+| Sails      | ✓           |             |
 | Koa        | ✓           |             |
 | Derby      | ✓           | ✓           |
 | Kraken     | ✓           |             |
@@ -95,7 +95,7 @@ and using node's `req` and `res` objects is supported.
 |-----------:|----------------------------------------------------|-----------------|
 | Meteor     |                                                    | ×               |
 | Express    | `app.use(function (req, res, next) {})`            | ✓               |
-| Sails      |                                                    |                 |
+| Sails      | `function(req, res, next)`                         | ✓               |
 | Koa        | `app.use(function* (next) {})`                     | ×               |
 | Derby      |                                                    |                 |
 | Kraken     | `app.use(function (req, res, next) {})`            | ✓               |
@@ -157,7 +157,7 @@ Which features a framework includes or does not include is unimportant - its phi
 |-----------:|---------------------|-------------------|---------|-------------|--------------|-------------------|
 | Meteor     |                     |                   |         |             |              |                   |
 | Express    | ✓                   | ✓                 | ✓       | ✓           |              |                   |
-| Sails      |                     |                   |         |             |              |                   |
+| Sails      | ✓                   | ✓                   | ✓       | ✓           | ✓            | ✓                   |
 | Koa        | ✓                   | ✓                 |         |             |              |                   |
 | Derby      |                     |                   |         |             |              |                   |
 | Kraken     | ✓                   | ✓                 | ✓       | ✓           |              |                   |
@@ -172,7 +172,7 @@ Which features a framework includes or does not include is unimportant - its phi
 |-----------:|---------------------|-----------------|-------------|--------------|----------------------|
 | Meteor     |                     |                 | ✓           |              | ✓                    |
 | Express    |                     |                 |             | ✓            |                      |
-| Sails      |                     |                 |             |              |                      |
+| Sails      | ✓                   | ✓               |             | ✓            |                      |
 | Koa        |                     |                 |             |              |                      |
 | Derby      |                     |                 |             |              |                      |
 | Kraken     |                     |                 |             |              |                      |
@@ -201,7 +201,7 @@ Which features a framework includes or does not include is unimportant - its phi
 |-----------:|------------------------|-----------------------|----------------------|
 | Meteor     | [MongoDB][mongodb]     |                       |                      |
 | Express    |                        |                       |                      |
-| Sails      |                        |                       |                      |
+| Sails      |                        |                       | MongoDb, Postgres, MySQL                     |
 | Koa        |                        |                       |                      |
 | Derby      |                        |                       |                      |
 | Kraken     |                        |                       |                      |
@@ -218,7 +218,7 @@ Which features a framework includes or does not include is unimportant - its phi
 |-----------:|-----------------------------|--------------------------------|-------------------------------|
 | Meteor     | [handlebars][handlebars]    |                                |                               |
 | Express    |                             |                                | [consolidate][consolidate]    |
-| Sails      |                             |                                |                               |
+| Sails      |                             |                                | [consolidate][consolidate]                               |
 | Koa        |                             |                                |                               |
 | Derby      |                             | [handlebars][handlebars]-like  |                               |
 | Kraken     |                             | [dustjs][dustjs]               | [consolidate][consolidate]    |
