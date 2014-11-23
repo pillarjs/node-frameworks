@@ -7,20 +7,21 @@ Only frameworks with over 1,000 stars are currently added.
 Feel free to add your own.
 The frameworks are listed by number of watchers, descending, as of March 18, 2014.
 
-| Framework              | Sponsor(s) / Author(s)                                   | Watchers    | Stars       |
-------------------------:|----------------------------------------------------------|-------------|-------------|
-| [Meteor][meteor]       | [Meteor Development Group][meteorgroup]                  | 973         | 11,687      |
-| [Express][express]     | [TJ Holowaychuk][tj]                                     | 828         | 12,824      |
-| [Sails][sails]         | [Mike McNeil][mikemcneil]                                | 485         | 5,582       |
-| [Koa][koa]             | [TJ Holowaychuk][tj]                                     | 232         | 3,160       |
-| [Derby][derby]         | [Nate Smith][natesmith] [Brian Noguchi][briannoguchi]    | 213         | 3,079       |
-| [Kraken][kraken]       | [PayPal][paypal]                                         | 210         | 2,424       |
-| [Hapi][hapi]           | [Walmart Labs][walmart]                                  | 204         | 1,981       |
-| [Connect][connect]     | [Sencha Labs][senchalabs]                                | 202         | 4,180       |
-| [Restify][restify]     | [Mark Cavage][markcavage]                                | 122         | 2,001       |
-| [Geddy][geddy]         | [Matthew Eernisse][mattheweernisse]                      | 101         | 1,703       |
-| [CompoundJS][compound] | [Anatoliy Chakkaev][1602]                                | 91          | 1,542       |
-| [Flatiron][flatiron]   | [Nodejitsu][nodejitsu]                                   | 75          | 1,146       |
+| Framework              | Sponsor(s) / Author(s)                                | Watchers | Stars  |
+------------------------:|-------------------------------------------------------|----------|--------|
+| [Meteor][meteor]       | [Meteor Development Group][meteorgroup]               | 973      | 11,687 |
+| [Express][express]     | [StrongLoop][strongloop] / [TJ Holowaychuk][tj]       | 828      | 12,824 |
+| [Sails][sails]         | [Mike McNeil][mikemcneil]                             | 485      | 5,582  |
+| [Koa][koa]             | [TJ Holowaychuk][tj]                                  | 232      | 3,160  |
+| [Derby][derby]         | [Nate Smith][natesmith] [Brian Noguchi][briannoguchi] | 213      | 3,079  |
+| [Kraken][kraken]       | [PayPal][paypal]                                      | 210      | 2,424  |
+| [Hapi][hapi]           | [Walmart Labs][walmart]                               | 204      | 1,981  |
+| [Connect][connect]     | [Sencha Labs][senchalabs]                             | 202      | 4,180  |
+| [LoopBack][loopback]   | [StrongLoop][strongloop]                              | 187      | 2,602  |
+| [Restify][restify]     | [Mark Cavage][markcavage]                             | 122      | 2,001  |
+| [Geddy][geddy]         | [Matthew Eernisse][mattheweernisse]                   | 101      | 1,703  |
+| [CompoundJS][compound] | [Anatoliy Chakkaev][1602]                             | 91       | 1,542  |
+| [Flatiron][flatiron]   | [Nodejitsu][nodejitsu]                                | 75       | 1,146  |
 
 ### Stack Integration
 
@@ -36,6 +37,7 @@ Traditionally, frameworks are explicitly server-side. However, there are now fra
 | Kraken     | ✓           |             |
 | Hapi       | ✓           |             |
 | Connect    | ✓           |             |
+| LoopBack   | ✓           | ✓           |
 | Restify    | ✓           |             |
 | Geddy      | ✓           | ✓           |
 | CompoundJS | ✓           |             |
@@ -45,40 +47,42 @@ Traditionally, frameworks are explicitly server-side. However, there are now fra
 
 Some frameworks are built upon other frameworks.
 
-| Framework  | Dependencies |
-|-----------:|--------------|
-| Meteor     |              |
+| Framework  | Dependencies                     |
+|-----------:|----------------------------------|
+| Meteor     |                                  |
 | Express    | [Connect][connect] for `< 4.0.0` |
-| Sails      | [Express][express] |
-| Koa        |             |
-| Derby      |             |
-| Kraken     | [Express][express] |
-| Hapi       |             |
-| Connect    |             |
-| Restify    |             |
-| Geddy      |             |
-| CompoundJS |             |
-| Flatiron   |             |
+| Sails      | [Express][express]               |
+| Koa        |                                  |
+| Derby      |                                  |
+| Kraken     | [Express][express]               |
+| Hapi       |                                  |
+| Connect    |                                  |
+| LoopBack   | [Express][express]               |
+| Restify    |                                  |
+| Geddy      |                                  |
+| CompoundJS |                                  |
+| Flatiron   |                                  |
 
 ### Source Lines of Code
 
 This is the lines of code a framework uses, not including comments.
 This is used to gauge complexity and modularity of a framework.
 
-| Framework  | Source Lines of Code | Version |
-|-----------:|----------------------|---------|
-| Meteor     |                      |         |
-| Express    | 1,150                | 4.0.0-rc3 |
-| Sails      | 5,350                | 0.10.0-rc4 |
-| Koa        | 550                  | 0.5.1   |
+| Framework  | Source Lines of Code | Version      |
+|-----------:|----------------------|--------------|
+| Meteor     |                      |              |
+| Express    | 1,150                | 4.0.0-rc3    |
+| Sails      | 5,350                | 0.10.0-rc4   |
+| Koa        | 550                  | 0.5.1        |
 | Derby      | 1,450                | 0.6.0-alpha3 |
-| Kraken     | 680                  | 0.7.    |
-| Hapi       | 4,750                | 3.0.0   |
-| Connect    | 120                  | 3.0.0-rc1 |
-| Restify    | 3,970                | 2.6.3   |
-| Geddy      | 5,660                | 0.12.4  |
-| CompoundJS | 3,010                | 1.1.13-1 |
-| Flatiron   | 581                  | 0.3.11  |
+| Kraken     | 680                  | 0.7.         |
+| Hapi       | 4,750                | 3.0.0        |
+| Connect    | 120                  | 3.0.0-rc1    |
+| LoopBack   | 10,472               | 2.8.0        |
+| Restify    | 3,970                | 2.6.3        |
+| Geddy      | 5,660                | 0.12.4       |
+| CompoundJS | 3,010                | 1.1.13-1     |
+| Flatiron   | 581                  | 0.3.11       |
 
 Note: [sloc](https://www.npmjs.org/package/sloc) is used to calculate the SLOC. Most are simply counted by running `sloc lib` and `lines of source code` is used.
 
@@ -91,20 +95,21 @@ Some work with node's `req` and `res` objects, whereas many others do not.
 A framework "supports node" if node's `req` and `res` objects are passed to plugins and middleware,
 and using node's `req` and `res` objects is supported.
 
-| Framework  | Signature                                          | Supports Node   |
-|-----------:|----------------------------------------------------|-----------------|
-| Meteor     |                                                    | ×               |
-| Express    | `app.use(function (req, res, next) {})`            | ✓               |
-| Sails      | `function(req, res, next)`                         | ✓               |
-| Koa        | `app.use(function* (next) {})`                     | ×               |
-| Derby      |                                                    |                 |
-| Kraken     | `app.use(function (req, res, next) {})`            | ✓               |
-| Hapi       | `app.ext('onRequest', function (req, next) {})`    | ×               |
-| Connect    | `app.use(function (req, res, next) {})`            | ✓               |
-| Restify    | `app.use(function (req, res, next) {})`            | ✓               |
-| Geddy      | `this.before(function (req, res) {})`              | ✓               |
-| CompoundJS |                                                    |                 |
-| Flatiron   |                                                    |                 |
+| Framework  | Signature                                          | Supports Node |
+|-----------:|----------------------------------------------------|---------------|
+| Meteor     |                                                    | ×             |
+| Express    | `app.use(function (req, res, next) {})`            | ✓             |
+| Sails      | `function(req, res, next)`                         | ✓             |
+| Koa        | `app.use(function* (next) {})`                     | ×             |
+| Derby      |                                                    |               |
+| Kraken     | `app.use(function (req, res, next) {})`            | ✓             |
+| Hapi       | `app.ext('onRequest', function (req, next) {})`    | ×             |
+| Connect    | `app.use(function (req, res, next) {})`            | ✓             |
+| LoopBack   | `app.use(function (req, res, next) {})`            | ✓             |
+| Restify    | `app.use(function (req, res, next) {})`            | ✓             |
+| Geddy      | `this.before(function (req, res) {})`              | ✓             |
+| CompoundJS |                                                    |               |
+| Flatiron   |                                                    |               |
 
 ### Error Handling
 
@@ -112,20 +117,21 @@ Error handling in node.js is wonderful!
 The current solution to catch uncaught exceptions (emitters and streams throwing errors everywhere) is to use [domains][domains] (unless you listen to every error).
 If a framework does not handle uncaught exceptions, then domains should probably use [domains][domains].
 
-| Framework  | Middleware/Plugin                                                | Uncaught Exceptions Handling |
-|-----------:|------------------------------------------------------------------|------------------------------|
-| Meteor     |                                                                  |                              |
-| Express    | `next(err)` / `app.use(function (err, req, res, next) {})`       | ×                            |
-| Sails      |                                                                  |                              |
+| Framework  | Middleware/Plugin                                                | Uncaught Exceptions Handling    |
+|-----------:|------------------------------------------------------------------|---------------------------------|
+| Meteor     |                                                                  |                                 |
+| Express    | `next(err)` / `app.use(function (err, req, res, next) {})`       | ×                               |
+| Sails      |                                                                  |                                 |
 | Koa        | try/catch                                                        | × - Unnecessary with generators |
-| Derby      |                                                                  |                              |
-| Kraken     | `next(err)` / `app.use(function (err, req, res, next) {})`       |                              |
-| Hapi       |                                                                  | [domains][domains]           |
-| Connect    | `next(err)` / `app.use(function (err, req, res, next) {})`       | ×                            |
-| Restify    | `next(err)`                                                      |                              |
-| Geddy      |                                                                  |                              |
-| CompoundJS |                                                                  |                              |
-| Flatiron   |                                                                  |                              |
+| Derby      |                                                                  |                                 |
+| Kraken     | `next(err)` / `app.use(function (err, req, res, next) {})`       |                                 |
+| Hapi       |                                                                  | [domains][domains]              |
+| Connect    | `next(err)` / `app.use(function (err, req, res, next) {})`       | ×                               |
+| LoopBack   | `next(err)` / `app.use(function (err, req, res, next) {})`       | x                               |
+| Restify    | `next(err)`                                                      |                                 |
+| Geddy      |                                                                  |                                 |
+| CompoundJS |                                                                  |                                 |
+| Flatiron   |                                                                  |                                 |
 
 ### Control Flow
 
@@ -133,20 +139,21 @@ Most frameworks use only node's traditional callbacks for control.
 As we move towards ES6, we will see frameworks that use generators and promises to avoid callback hell.
 Any framework without a `control flow` is assumed to use callbacks unless otherwise specified.
 
-| Framework  | Control Flow |
-|-----------:|--------------|
-| Meteor     | [fibers][fibers] |
-| Express    |              |
-| Sails      |              |
+| Framework  | Control Flow          |
+|-----------:|-----------------------|
+| Meteor     | [fibers][fibers]      |
+| Express    |                       |
+| Sails      |                       |
 | Koa        | generators - [co][co] |
-| Derby      |              |
-| Kraken     |              |
-| Hapi       |              |
-| Connect    |              |
-| Restify    |              |
-| Geddy      |              |
-| CompoundJS |              |
-| Flatiron   |              |
+| Derby      |                       |
+| Kraken     |                       |
+| Hapi       |                       |
+| Connect    |                       |
+| LoopBack   |                       |
+| Restify    |                       |
+| Geddy      |                       |
+| CompoundJS |                       |
+| Flatiron   |                       |
 
 ### Included Features
 
@@ -157,14 +164,15 @@ Which features a framework includes or does not include is unimportant - its phi
 |-----------:|---------------------|-------------------|---------|-------------|--------------|-------------------|
 | Meteor     |                     |                   |         |             |              |                   |
 | Express    | ✓                   | ✓                 | ✓       | ✓           |              |                   |
-| Sails      | ✓                   | ✓                   | ✓       | ✓           | ✓            | ✓                   |
+| Sails      | ✓                   | ✓                 | ✓       | ✓           | ✓            | ✓                 |
 | Koa        | ✓                   | ✓                 |         |             |              |                   |
 | Derby      |                     |                   |         |             |              |                   |
 | Kraken     | ✓                   | ✓                 | ✓       | ✓           |              |                   |
 | Hapi       |                     |                   |         |             |              |                   |
 | Connect    |                     |                   |         |             |              |                   |
+| LoopBack   | ✓                   | ✓                 | ✓       | ✓           |              |                   |
 | Restify    | ✓                   |                   | ✓       |             | ✓            | ✓                 |
-| Geddy      | ✓                   | ✓                 | ✓       |  ✓          | ✓            |                   |
+| Geddy      | ✓                   | ✓                 | ✓       | ✓           | ✓            |                   |
 | CompoundJS |                     |                   |         |             |              |                   |
 | Flatiron   |                     |                   |         |             |              |                   |
 
@@ -178,6 +186,7 @@ Which features a framework includes or does not include is unimportant - its phi
 | Kraken     |                     |                 |             |              |                      |
 | Hapi       |                     |                 |             |              |                      |
 | Connect    |                     |                 |             |              |                      |
+| LoopBack   |                     |                 |             | ✓            |                      |
 | Restify    |                     |                 | ✓           |              | ✓                    |
 | Geddy      | ✓                   | ✓               |             |              | ✓                    |
 | CompoundJS |                     |                 |             |              |                      |
@@ -197,37 +206,39 @@ Which features a framework includes or does not include is unimportant - its phi
 
 ### Database
 
-| Framework  | Required Databases     | Recommended Databases | Compatible Databases |
-|-----------:|------------------------|-----------------------|----------------------|
-| Meteor     | [MongoDB][mongodb]     |                       |                      |
-| Express    |                        |                       |                      |
-| Sails      |                        |                       | MongoDb, Postgres, MySQL                     |
-| Koa        |                        |                       |                      |
-| Derby      |                        |                       |                      |
-| Kraken     |                        |                       |                      |
-| Hapi       |                        |                       |                      |
-| Connect    |                        |                       |                      |
-| Restify    |                        |                       |                      |
-| Geddy      |                        |                       | MongoDB, LevelDB, Riak, Postgres, SQLite, MySQL |
-| CompoundJS |                        |                       |                      |
-| Flatiron   |                        |                       |                      |
+| Framework  | Required Databases     | Recommended Databases | Compatible Databases                                   |
+|-----------:|------------------------|-----------------------|--------------------------------------------------------|
+| Meteor     | [MongoDB][mongodb]     |                       |                                                        |
+| Express    |                        |                       |                                                        |
+| Sails      |                        |                       | MongoDB, MySQL, Postgres                               |
+| Koa        |                        |                       |                                                        |
+| Derby      |                        |                       |                                                        |
+| Kraken     |                        |                       |                                                        |
+| Hapi       |                        |                       |                                                        |
+| Connect    |                        |                       |                                                        |
+| LoopBack   |                        |                       | Microsoft SQL Server, MongoDB, MySQL, Oracle, Postgres |
+| Restify    |                        |                       |                                                        |
+| Geddy      |                        |                       | LevelDB, MongoDB, MySQL, Postgres, Riak, SQLite        |
+| CompoundJS |                        |                       |                                                        |
+| Flatiron   |                        |                       |                                                        |
 
 ### Templating
 
-| Framework  | Required Templating Systems | Recommended Templating Systems | Compatible Templating Systems |
-|-----------:|-----------------------------|--------------------------------|-------------------------------|
-| Meteor     | [handlebars][handlebars]    |                                |                               |
-| Express    |                             |                                | [consolidate][consolidate]    |
-| Sails      |                             |                                | [consolidate][consolidate]                               |
-| Koa        |                             |                                |                               |
-| Derby      |                             | [handlebars][handlebars]-like  |                               |
-| Kraken     |                             | [dustjs][dustjs]               | [consolidate][consolidate]    |
-| Hapi       |                             |                                |                               |
-| Connect    |                             |                                |                               |
-| Restify    |                             |                                |                               |
+| Framework  | Required Templating Systems | Recommended Templating Systems | Compatible Templating Systems         |
+|-----------:|-----------------------------|--------------------------------|---------------------------------------|
+| Meteor     | [handlebars][handlebars]    |                                |                                       |
+| Express    |                             |                                | [consolidate][consolidate]            |
+| Sails      |                             |                                | [consolidate][consolidate]            |
+| Koa        |                             |                                |                                       |
+| Derby      |                             | [handlebars][handlebars]-like  |                                       |
+| Kraken     |                             | [dustjs][dustjs]               | [consolidate][consolidate]            |
+| Hapi       |                             |                                |                                       |
+| Connect    |                             |                                |                                       |
+| LoopBack   |                             |                                | [consolidate][consolidate]            |
+| Restify    |                             |                                |                                       |
 | Geddy      |                             |                                | handlebars, EJS, Jade, Swig, mustache |
-| CompoundJS |                             |                                |                               |
-| Flatiron   |                             |                                |                               |
+| CompoundJS |                             |                                |                                       |
+| Flatiron   |                             |                                |                                       |
 
 [consolidate][consolidate] means that the framework supports any templating system supported by consolidate.js.
 
@@ -265,11 +276,13 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-[express]: https://github.com/visionmedia/express
+[strongloop]: http://strongloop.com/
+[loopback]: http://loopback.io/
+[express]: http://expressjs.com/
 [koa]: https://github.com/koajs/koa
 [connect]: https://github.com/senchalabs/connect
 [meteor]: https://github.com/meteor/meteor
-[tj]: http://github.com/visionmedia
+[tj]: http://github.com/tj
 [derby]: https://github.com/codeparty/derby
 [sails]: https://github.com/balderdashy/sails
 [compound]: https://github.com/1602/compound
@@ -296,4 +309,3 @@ THE SOFTWARE.
 [fibers]: https://github.com/laverdet/node-Fibers
 [consolidate]: https://github.com/visionmedia/consolidate.js/
 [domains]: http://nodejs.org/api/domain.html
-
