@@ -67,24 +67,25 @@ Some frameworks are built upon other frameworks.
 
 This is the lines of code a framework uses, not including comments.
 This is used to gauge complexity and modularity of a framework.
+The frameworks are listed by source lines of code, ascending.
 
-| Framework  | Source Lines of Code | Version      |
-|-----------:|----------------------|--------------|
-| Meteor     |                      |              |
-| Express    | 1,735                | 4.13.4       |
-| Sails      | 6,529                | 0.12.0       |
-| Koa        | 584                  | 1.1.2        |
-| Derby      | 1,751                | 0.8.3        |
-| Kraken     | 395                  | 2.1.0        |
-| Hapi       | 3,904                | 13.0.0       |
-| Connect    | 129                  | 3.4.1        |
-| LoopBack   | 5,057                | 2.26.2       |
-| Restify    | 4,456                | 4.0.3        |
-| Geddy      | 6,094                | 13.0.8       |
-| CompoundJS | 3,010                | 1.1.13-1     |
-| Flatiron   | 581                  | 0.4.3        |
+| Framework  | Source Lines of Code | Full install | Version      |
+|-----------:|----------------------|--------------|--------------|
+| Connect    | 129                  | 819          | 3.4.1        |
+| Kraken     | 395                  | 34,659       | 2.1.0        |
+| Flatiron   | 581                  | 26,914       | 0.4.3        |
+| Koa        | 584                  | 3,493        | 1.1.2        |
+| Express    | 1,735                | 7,288        | 4.13.4       |
+| Derby      | 1,751                | 141,615      | 0.8.3        |
+| CompoundJS | 3,300                | 71,505       | 1.1.16       |
+| Hapi       | 3,904                | 117,757      | 13.0.0       |
+| Restify    | 4,456                | 36,251       | 4.0.3        |
+| LoopBack   | 5,057                | 178,616      | 2.26.2       |
+| Geddy      | 6,094                | 63,369       | 13.0.8       |
+| Sails      | 6,529                | 787,660      | 0.12.0       |
+| Meteor     |                      |              |              |
 
-Note: [sloc](https://www.npmjs.org/package/sloc) is used to calculate the SLOC. Most are simply counted by running `sloc lib` and `lines of source code` is used.
+Note: [sloc](https://www.npmjs.org/package/sloc) is used to calculate the SLOC. Most are simply counted by running `sloc lib` and `lines of source code` is used. For "Full install", `sloc node_modules` after a clean install is used, and thus includes all dependencies, tests, etc.
 
 ### Middleware/Plugin Signature
 
