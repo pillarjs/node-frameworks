@@ -192,9 +192,9 @@ Which features a framework includes or does not include is unimportant - its phi
 | CompoundJS |                     |                 |             |              |                      |
 | Flatiron   |                     |                 |             |              |                      |
 
-- Content Negotiation - ability to negotiation server response types and the request's acceptable types.
+- Content Negotiation - ability to negotiation server response types and the request's acceptable types
 - Cookie Management - ability to parse cookies as well as set cookies
-- Routing -
+- Routing - ability to invoke custom handlers depending on the request path
 - View System - ability to choose a templating system and render templates by their name
 - Body Parsing - ability to parse urlencoded and json request bodies
 - Multipart Parsing - ability to part multipart request bodies
@@ -202,7 +202,7 @@ Which features a framework includes or does not include is unimportant - its phi
 - CSRF Protection - built in CSRF protection
 - Compression - built-in gzip and deflate response compression
 - File Uploads - built-in ability to send local files to the client
-- Basic Authentication
+- Basic Authentication - ability to use basic access authentication, parsing username and password from a request
 
 ### Database
 
