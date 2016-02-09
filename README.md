@@ -8,7 +8,7 @@ Feel free to add your own.
 The frameworks are listed by number of watchers, descending, as of February 9, 2016.
 
 | Framework              | Sponsor(s) / Author(s)                                | Watchers | Stars  |
-------------------------:|-------------------------------------------------------|----------|--------|
+|-----------------------:|-------------------------------------------------------|----------|--------|
 | [Meteor][meteor]       | [Meteor Development Group][meteorgroup]               | 1,864    | 31,918 |
 | [Express][express]     | [StrongLoop][strongloop] / [TJ Holowaychuk][tj]       | 1,344    | 22,945 |
 | [Sails][sails]         | [Mike McNeil][mikemcneil]                             | 791      | 13,405 |
