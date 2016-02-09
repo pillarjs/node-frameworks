@@ -5,23 +5,23 @@ This may include frameworks with a browser-side component.
 
 Only frameworks with over 1,000 stars are currently added.
 Feel free to add your own.
-The frameworks are listed by number of watchers, descending, as of March 18, 2014.
+The frameworks are listed by number of watchers, descending, as of February 9, 2016.
 
 | Framework              | Sponsor(s) / Author(s)                                | Watchers | Stars  |
 ------------------------:|-------------------------------------------------------|----------|--------|
-| [Meteor][meteor]       | [Meteor Development Group][meteorgroup]               | 973      | 11,687 |
-| [Express][express]     | [StrongLoop][strongloop] / [TJ Holowaychuk][tj]       | 828      | 12,824 |
-| [Sails][sails]         | [Mike McNeil][mikemcneil]                             | 485      | 5,582  |
-| [Koa][koa]             | [TJ Holowaychuk][tj]                                  | 232      | 3,160  |
-| [Derby][derby]         | [Nate Smith][natesmith] [Brian Noguchi][briannoguchi] | 213      | 3,079  |
-| [Kraken][kraken]       | [PayPal][paypal]                                      | 210      | 2,424  |
-| [Hapi][hapi]           | [Walmart Labs][walmart]                               | 204      | 1,981  |
-| [Connect][connect]     | [Sencha Labs][senchalabs]                             | 202      | 4,180  |
-| [LoopBack][loopback]   | [StrongLoop][strongloop]                              | 187      | 2,602  |
-| [Restify][restify]     | [Mark Cavage][markcavage]                             | 122      | 2,001  |
-| [Geddy][geddy]         | [Matthew Eernisse][mattheweernisse]                   | 101      | 1,703  |
-| [CompoundJS][compound] | [Anatoliy Chakkaev][1602]                             | 91       | 1,542  |
-| [Flatiron][flatiron]   | [Nodejitsu][nodejitsu]                                | 75       | 1,146  |
+| [Meteor][meteor]       | [Meteor Development Group][meteorgroup]               | 1,864    | 31,918 |
+| [Express][express]     | [StrongLoop][strongloop] / [TJ Holowaychuk][tj]       | 1,344    | 22,945 |
+| [Sails][sails]         | [Mike McNeil][mikemcneil]                             | 791      | 13,405 |
+| [Koa][koa]             | [TJ Holowaychuk][tj]                                  | 527      | 8,862  |
+| [Hapi][hapi]           | [Walmart Labs][walmart]                               | 358      | 5,449  |
+| [LoopBack][loopback]   | [StrongLoop][strongloop]                              | 321      | 5,860  |
+| [Connect][connect]     | [Sencha Labs][senchalabs]                             | 297      | 6,077  |
+| [Kraken][kraken]       | [PayPal][paypal]                                      | 238      | 3,767  |
+| [Derby][derby]         | [Nate Smith][natesmith] [Brian Noguchi][briannoguchi] | 200      | 3,940  |
+| [Restify][restify]     | [Mark Cavage][markcavage]                             | 197      | 4,576  |
+| [Geddy][geddy]         | [Matthew Eernisse][mattheweernisse]                   | 99       | 1,896  |
+| [CompoundJS][compound] | [Anatoliy Chakkaev][1602]                             | 85       | 1,653  |
+| [Flatiron][flatiron]   | [Nodejitsu][nodejitsu]                                | 50       | 1,304  |
 
 ### Stack Integration
 
@@ -71,18 +71,18 @@ This is used to gauge complexity and modularity of a framework.
 | Framework  | Source Lines of Code | Version      |
 |-----------:|----------------------|--------------|
 | Meteor     |                      |              |
-| Express    | 1,150                | 4.0.0-rc3    |
-| Sails      | 5,350                | 0.10.0-rc4   |
-| Koa        | 550                  | 0.5.1        |
-| Derby      | 1,450                | 0.6.0-alpha3 |
-| Kraken     | 680                  | 0.7.         |
-| Hapi       | 4,750                | 3.0.0        |
-| Connect    | 120                  | 3.0.0-rc1    |
-| LoopBack   | 10,472               | 2.8.0        |
-| Restify    | 3,970                | 2.6.3        |
-| Geddy      | 5,660                | 0.12.4       |
+| Express    | 1,735                | 4.13.4       |
+| Sails      | 6,529                | 0.12.0       |
+| Koa        | 584                  | 1.1.2        |
+| Derby      | 1,751                | 0.8.3        |
+| Kraken     | 395                  | 2.1.0        |
+| Hapi       | 3,904                | 13.0.0       |
+| Connect    | 129                  | 3.4.1        |
+| LoopBack   | 5,057                | 2.26.2       |
+| Restify    | 4,456                | 4.0.3        |
+| Geddy      | 6,094                | 13.0.8       |
 | CompoundJS | 3,010                | 1.1.13-1     |
-| Flatiron   | 581                  | 0.3.11       |
+| Flatiron   | 581                  | 0.4.3        |
 
 Note: [sloc](https://www.npmjs.org/package/sloc) is used to calculate the SLOC. Most are simply counted by running `sloc lib` and `lines of source code` is used.
 
