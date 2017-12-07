@@ -7,12 +7,14 @@ Only frameworks with over 1,000 stars are currently added.
 Feel free to add your own.
 The frameworks are listed by number of watchers, descending, as of March 18, 2014.
 
+
 | Framework              | Sponsor(s) / Author(s)                                | Watchers | Stars  |
 ------------------------:|-------------------------------------------------------|----------|--------|
 | [Meteor][meteor]       | [Meteor Development Group][meteorgroup]               | 973      | 11,687 |
 | [Express][express]     | [StrongLoop][strongloop] / [TJ Holowaychuk][tj]       | 828      | 12,824 |
 | [Sails][sails]         | [Mike McNeil][mikemcneil]                             | 485      | 5,582  |
 | [Koa][koa]             | [TJ Holowaychuk][tj]                                  | 232      | 3,160  |
+| [Strapi][strapi]       | [Strapi Solutions][strapisolutions]                   | 232      | 3,160  |
 | [Derby][derby]         | [Nate Smith][natesmith] [Brian Noguchi][briannoguchi] | 213      | 3,079  |
 | [Kraken][kraken]       | [PayPal][paypal]                                      | 210      | 2,424  |
 | [Hapi][hapi]           | [Walmart Labs][walmart]                               | 204      | 1,981  |
@@ -21,7 +23,7 @@ The frameworks are listed by number of watchers, descending, as of March 18, 201
 | [Restify][restify]     | [Mark Cavage][markcavage]                             | 122      | 2,001  |
 | [Geddy][geddy]         | [Matthew Eernisse][mattheweernisse]                   | 101      | 1,703  |
 | [CompoundJS][compound] | [Anatoliy Chakkaev][1602]                             | 91       | 1,542  |
-| [Flatiron][flatiron]   | [Nodejitsu][nodejitsu]                                | 75       | 1,146  |
+| [Flatiron][flatiron]   | [Nodejitsu][nodejitsu]                                | 75       | 1,146  
 
 ### Stack Integration
 
@@ -33,6 +35,7 @@ Traditionally, frameworks are explicitly server-side. However, there are now fra
 | Express    | ✓           |             |
 | Sails      | ✓           |             |
 | Koa        | ✓           |             |
+| Strapi     | ✓           |             |
 | Derby      | ✓           | ✓           |
 | Kraken     | ✓           |             |
 | Hapi       | ✓           |             |
@@ -53,6 +56,7 @@ Some frameworks are built upon other frameworks.
 | Express    | [Connect][connect] for `< 4.0.0` |
 | Sails      | [Express][express]               |
 | Koa        |                                  |
+| Strapi     | [Koa][koa]                       |
 | Derby      |                                  |
 | Kraken     | [Express][express]               |
 | Hapi       |                                  |
@@ -74,6 +78,7 @@ This is used to gauge complexity and modularity of a framework.
 | Express    | 1,150                | 4.0.0-rc3    |
 | Sails      | 5,350                | 0.10.0-rc4   |
 | Koa        | 550                  | 0.5.1        |
+| Strapi     | 122,701              | 3.0.0-alpha7 |
 | Derby      | 1,450                | 0.6.0-alpha3 |
 | Kraken     | 680                  | 0.7.         |
 | Hapi       | 4,750                | 3.0.0        |
@@ -101,6 +106,7 @@ and using node's `req` and `res` objects is supported.
 | Express    | `app.use(function (req, res, next) {})`            | ✓             |
 | Sails      | `function(req, res, next)`                         | ✓             |
 | Koa        | `app.use(function* (next) {})`                     | ×             |
+| Strapi     | `async (ctx) => {}`                                | ×             |
 | Derby      |                                                    |               |
 | Kraken     | `app.use(function (req, res, next) {})`            | ✓             |
 | Hapi       | `app.ext('onRequest', function (req, next) {})`    | ×             |
@@ -123,6 +129,7 @@ If a framework does not handle uncaught exceptions, then domains should probably
 | Express    | `next(err)` / `app.use(function (err, req, res, next) {})`       | ×                               |
 | Sails      |                                                                  |                                 |
 | Koa        | try/catch                                                        | × - Unnecessary with generators |
+| Strapi     | try/catch                                                        | × - Unnecessary with async/await|
 | Derby      |                                                                  |                                 |
 | Kraken     | `next(err)` / `app.use(function (err, req, res, next) {})`       |                                 |
 | Hapi       |                                                                  | [domains][domains]              |
@@ -145,6 +152,7 @@ Any framework without a `control flow` is assumed to use callbacks unless otherw
 | Express    |                       |
 | Sails      |                       |
 | Koa        | generators - [co][co] |
+| Strapi     | async/await           |
 | Derby      |                       |
 | Kraken     |                       |
 | Hapi       |                       |
@@ -166,6 +174,7 @@ Which features a framework includes or does not include is unimportant - its phi
 | Express    | ✓                   | ✓                 | ✓       | ✓           |              |                   |
 | Sails      | ✓                   | ✓                 | ✓       | ✓           | ✓            | ✓                 |
 | Koa        | ✓                   | ✓                 |         |             |              |                   |
+| Strapi     | ✓                   | ✓                 | ✓       | ✓           | ✓            | ✓                 |
 | Derby      |                     |                   |         |             |              |                   |
 | Kraken     | ✓                   | ✓                 | ✓       | ✓           |              |                   |
 | Hapi       |                     |                   |         |             |              |                   |
@@ -182,6 +191,7 @@ Which features a framework includes or does not include is unimportant - its phi
 | Express    |                     |                 |             | ✓            |                      |
 | Sails      | ✓                   | ✓               |             | ✓            |                      |
 | Koa        |                     |                 |             |              |                      |
+| Strapi     | ✓                   | ✓               | ✓           | ✓            | ✓                    |
 | Derby      |                     |                 |             |              |                      |
 | Kraken     |                     |                 |             |              |                      |
 | Hapi       |                     |                 |             |              |                      |
@@ -212,6 +222,7 @@ Which features a framework includes or does not include is unimportant - its phi
 | Express    |                        |                       |                                                        |
 | Sails      |                        |                       | MongoDB, MySQL, Postgres                               |
 | Koa        |                        |                       |                                                        |
+| Strapi     |                        |                       | MongoDB, MySQL, Postgres, SQLite, Redis                |
 | Derby      |                        |                       |                                                        |
 | Kraken     |                        |                       |                                                        |
 | Hapi       |                        |                       |                                                        |
@@ -230,6 +241,7 @@ Which features a framework includes or does not include is unimportant - its phi
 | Express    |                             |                                | [consolidate][consolidate]            |
 | Sails      |                             |                                | [consolidate][consolidate]            |
 | Koa        |                             |                                |                                       |
+| Strapi     |                             |                                | [consolidate][consolidate]            |
 | Derby      |                             | [handlebars][handlebars]-like  |                                       |
 | Kraken     |                             | [dustjs][dustjs]               | [consolidate][consolidate]            |
 | Hapi       |                             |                                |                                       |
@@ -280,6 +292,8 @@ THE SOFTWARE.
 [loopback]: http://loopback.io/
 [express]: http://expressjs.com/
 [koa]: https://github.com/koajs/koa
+[strapi]: https://github.com/strapi/strapi
+[strapisolutions]: https://strapi.io
 [connect]: https://github.com/senchalabs/connect
 [meteor]: https://github.com/meteor/meteor
 [tj]: http://github.com/tj
